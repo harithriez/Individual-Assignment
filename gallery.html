@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harith's Biodata</title>
+  <link rel="icon" type="image/x-icon" href="image/LOGO.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/9e9e882896.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <style>
+        .heading {
+        text-align: center;
+        font-size: 2.0em;
+        letter-spacing: 1px;
+        padding: 40px;
+        color: white;
+    }
+    
+        .gallery-image {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+        .gallery-image img {
+        height: 250px;
+        width: 350px;
+        transform: scale(1.0);
+        transition: transform 0.4s ease;
+    }
+    
+        .img-box {
+        box-sizing: content-box;
+        margin: 10px;
+        height: 250px;
+        width: 350px;
+        overflow: hidden;
+        display: inline-block;
+        color: white;
+        position: relative;
+        
+    }
+    
+        .caption {
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+        opacity: 0.0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+        .transparent-box {
+        height: 250px;
+        width: 350px;
+        background-color:rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: background-color 0.3s ease;
+    }
+    
+        .img-box:hover img { 
+        transform: scale(1.1);
+    }
+    
+        .img-box:hover .transparent-box {
+        background-color:rgba(0, 0, 0, 0.5);
+    }
+    
+        .img-box:hover .caption {
+        transform: translateY(-20px);
+        opacity: 1.0;
+    }
+    
+        .img-box:hover {
+        cursor: pointer;
+    }
+    
+        .caption > p:nth-child(2) {
+        font-size: 0.8em;
+    }
+    
+        .opacity-low {
+        opacity: 0.5;
+    }
+     </style>
+    </head>
+
+    <body class="light-theme">
+        <header>
+      
+          <div class="container">
+      
+            <nav class="navbar">
+      
+              <a href="index.html">
+                <img src="image/LOGO.png" alt="Fr logo" width="90" class="logo-light">
+              </a>
+      
+              <div class="btn-group">
+      
+                <button class="nav-menu-btn">
+                  <ion-icon name="menu-outline"></ion-icon>
+                </button>
+      
+              </div>
+      
+              <div class="flex-wrapper">
+      
+                <ul class="desktop-nav">
+      
+                  <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                  </li>
+      
+                  <li>
+                    <a href="biodata.html" class="nav-link">About Me</a>
+                  </li>
+    
+                  <li>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                  </li>
+      
+                  <li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                  </li>
+       
+                </ul>
+      
+              </div>
+      
+              <div class="mobile-nav">
+      
+                <button class="nav-close-btn">
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+      
+                <div class="left" style="margin-top: 10px;">
+      
+                  <div class="pattern-bg"></div>
+                  <div class="img-box">
+                    <img src="image/LOGO.png" alt="FR" width="150" class="hero-img">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                  </div>
+        
+                </div>
+        
+                <div class="wrapper" style="margin-left: 24px;">
+      
+                  <p class="h3 nav-title">Main Menu</p>
+      
+                  <ul>
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link">Home</a>
+                    </li>
+      
+                    <li class="nav-item">
+                      <a href="biodata.html" class="nav-link">About Me</a>
+                    </li>
+      
+                    <li class="nav-item">
+                      <a href="contact.html" class="nav-link">Contact Me</a>
+                    </li>
+      
+                    <li class="nav-item">
+                      <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+       
+                  </ul>
+      
+              </div>
+      
+            </nav>
+      
+          </div>
+      
+        </header>
+
+        <!---GALLERY-->
+
+        
+  <div class="main">
+	<h1>Gallery</h1>
+  <style>
+    h1 {color:white;}
+    h1 {margin-top: -50px;}
+  </style>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="image/aidilfitri with SOB.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Aidilfitri with SOB</p>
+          <p class="opacity-low">Tunku Abdul Rahman Stair</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="image/cendol with friends.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Hi tea With SOB</p>
+          <p class="opacity-low">Klang</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="image/final test imd311.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Final Test Imd311</p>
+          <p class="opacity-low">At Dewan Biduanda</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="image/jamuan with madam amira.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Breakfast with Madam Amira</p>
+          <p class="opacity-low">Cafe</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="image/lawatan memorial with madam amira.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Memorial visit</p>
+          <p class="opacity-low">Kuala Lumpur</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="image/My Family.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>My Family</p>
+          <p class="opacity-low">At Heaven</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="image/My love.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>My Love</p>
+          <p class="opacity-low">Soulmate<3</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+        <img src="image/Photoshoot with Classmates.jpg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Photoshoot with classmates</p>
+            <p class="opacity-low">In front of our faculty</p>
+          </div>
+        </div> 
+      </div>
+      <div class="img-box">
+        <img src="image/rempit style.jpg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Assembled motorcycle</p>
+            <p class="opacity-low">Healing</p>
+          </div>
+        </div> 
+      </div>
+	    </div>
+  
+  <!--- #FOOTER --->
+  
+  <footer>
+  
+    <div class="container">
+
+      <div class="wrapper">
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href=https://nsembilan.uitm.edu.my/rembau/ class="footer-link">UiTMCNS</a>
+          </li>
+
+          <li>
+            <a href="https://www.uitm.edu.my/index.php/ms/kenali-uitm/tentang-uitm" class="footer-link">About UITM</a>
+          </li>
+
+          <li>
+            <a href="https://hea.uitm.edu.my/v4/index.php/corporate/contact-us" class="footer-link">Contact UITM</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Social Media</p>
+
+        <ul>
+
+          <li>
+            <a href="https://www.facebook.com/muhd.harith.96155?mibextid=LQQJ4d" class="footer-link">Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://instagram.com/riezzmn__?igshid=OGQ5ZDc2ODk2ZA==" class="footer-link">Instagram</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
